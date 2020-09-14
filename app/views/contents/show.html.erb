@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @content.name %>
+</p>
+
+<%= link_to 'Download', @content.file, download: '' %>
+<%= link_to 'View file', @content.file %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @content.description %>
+</p>
+
+<%= link_to 'Edit', edit_content_path(@content) %> |
+<%= link_to 'Back', contents_path %>
