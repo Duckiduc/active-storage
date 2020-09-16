@@ -155,6 +155,12 @@ config.active_storage.service = :mirror
 
 > Note that your credentials are not encrypted.
 
+### Copy / synchronize  main service to mirror services
+
+Make sure you set your source service as the primary service and your target(s) as mirrors
+
+In the terminal, run the command `rake active_storage:mirror_all`
+
 ## Built With
 
 ### Languages
